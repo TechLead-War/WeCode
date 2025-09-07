@@ -1,17 +1,18 @@
 import { Vortex } from "@/app/components/ui/Vortex";
 import Navbar from "@/app/components/Navbar";
+import { Cards } from "@/app/components/Cards";
 
 export default function Home() {
   return (
     <div>
-    <Navbar />
+      <Navbar />
       <Vortex
-        containerClassName="fixed inset-0 -z-10"
-        className="relative z-10 flex h-screen w-full flex-col text-center"
+        containerClassName="-z-10 pointer-events-none"
+        className="relative z-10 flex w-full flex-col items-center text-center pt-20 h-screen pb-12 pointer-events-auto"
         backgroundColor="#000"
         baseHue={210}
       >
-        <div className="space-y-6 mt-54">
+        <div className="space-y-6 mt-56">
           <h1 className="text-5xl font-bold text-white">
             Welcome to <span className="text-purple-400">WeCode</span>
           </h1>
@@ -21,16 +22,28 @@ export default function Home() {
             collaborate, and shape the future.&#34;
           </p>
 
-          <div className="flex justify-center gap-4">
-            <button className="px-6 py-3 rounded-full bg-purple-500 text-white font-semibold hover:bg-sky-600">
-              Join Discord
-            </button>
-            <button className="px-6 py-3 rounded-full bg-white text-gray-800 font-semibold hover:bg-gray-100">
-              Learn More
-            </button>
-          </div>
+            <div className="flex flex-wrap justify-center gap-4">
+                <a
+                    href="https://discord.gg/dk25zDfk"
+                    className="px-6 py-3 bg-purple-500 text-white font-semibold rounded-full shadow hover:bg-purple-400 transition"
+                >
+                    Join Discord
+                </a>
+                <a
+                    href="#contact"
+
+                    className="px-6 py-3 bg-white text-[#1e3a8a] font-semibold rounded-full shadow hover:brightness-105 transition"
+                >
+                    Learn More
+                </a>
+
+            </div>
         </div>
       </Vortex>
+
+        <section id="cards" className="relative z-20">
+            <Cards/>
+        </section>
     </div>
   );
 }

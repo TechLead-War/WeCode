@@ -17,15 +17,12 @@ export default function Navbar() {
                   <img src="/logo.png" alt="WeCode Logo"/>
                 </div>
               </div>
-              <span className="text-xl font-bold tracking-tight">WeCode</span>
+              <span className="text-xl font-bold tracking-tight"><a href={"#"}> WeCode </a></span>
             </div>
 
             <div className="hidden md:flex items-center space-x-6">
               <a href="#events" className="hover:underline text-sm font-medium">
                 Events
-              </a>
-              <a href="#resources" className="hover:underline text-sm font-medium">
-                Resource Material
               </a>
 
               <a href="#openposition" className="hover:underline text-sm font-medium">
