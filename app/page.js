@@ -1,8 +1,10 @@
 import { Vortex } from "@/app/components/ui/Vortex";
+import Navbar from "@/app/components/Navbar";
 
 export default function Home() {
   return (
     <div>
+    <Navbar />
       <Vortex
         containerClassName="fixed inset-0 -z-10"
         className="relative z-10 flex h-screen w-full flex-col text-center"
