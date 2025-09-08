@@ -91,7 +91,7 @@ export const data = [
   {
     category: "October 2025",
     title: "Speed Coding (Only for 1st Year).",
-    src: "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3",
+    src: "/speed-typing-competition.png",
     info: [
       "Short, high-tempo rounds focused on fundamentals: arrays, strings, hashing, sorting, two-pointers. Penalties for incorrect submissions discourage guesswork.",
       "We provide instant feedback, frozen scoreboard for the last 15 minutes, and a short editorial after the event to reinforce learning."
@@ -104,7 +104,7 @@ export const data = [
     results: ["Scoreboard frozen last 15 minutes; results at 7:00 PM", "Editorial link mailed next day"],
     capacity: "150",
     photos: [
-      "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1800&auto=format&fit=crop"
+      "/speed-typing-competition.png"
     ],
     links: { register: "/events/speed-coding/register", photos: "/events/speed-coding/gallery", rules: "/events/speed-coding/rules" },
     contact: "wecode@gehubhimtal.in",
