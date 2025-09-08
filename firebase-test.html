@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Resume Submit (Supabase)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body{font:16px system-ui;margin:2rem;max-width:720px}
+    .row{display:flex;gap:8px;margin:.5rem 0}
+    input,button{padding:.6rem .8rem}
+  </style>
+  <script type="module">
+    import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+
+    // --- CONFIG ---
+    const SUPABASE_URL  = "https://tquwbozfykjtxcppjliz.supabase.co";
+    const SUPABASE_ANON = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRxdXdib3pmeWtqdHhjcHBqbGl6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTczMzE3ODksImV4cCI6MjA3MjkwNzc4OX0.SlGdW4BTe8d5E5wFprsRnjTQbq2e6V0hjFZaec2AFOU";
+    const BUCKET = "submissions";
+
+    // --- INIT ---
+    const supabase = createClient(SUPABASE_URL, SUPABASE_ANON);
+    const $ = s => document.querySelector(s);
+
+    // --- HELPERS ---
+    const rand6 = () => Math.random().toString(36).slice(2, 8);
+    const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,40);
+    async function hash8(s){
+      const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s));
+      return [...new Uint8Array(buf)].slice(0,4).map(x=>x.toString(16).padStart(2,'0')).join('');
+    }
+    async function makeFolderName(name, email){
+      return `${slug(name)}-${await hash8(email)}-${rand6()}`; // e.g. ayush-kapri-a1b2c3d4-h3k9q2
+    }
+
+    async function upload(path, fileOrBlob, contentType){
+      const { data, error } = await supabase.storage
+        .from(BUCKET)
+        .upload(path, fileOrBlob, { contentType, upsert:false, cacheControl:"no-cache" });
+      if (error) console.error("UPLOAD ERR:", path, error.message || error);
+      return { data, error };
+    }
+
+    function publicUrl(path){
+      const { data } = supabase.storage.from(BUCKET).getPublicUrl(path);
+      return data.publicUrl;
+    }
+
+    async function submitForm(e){
+      e.preventDefault();
+      const name  = $("#name").value.trim();
+      const email = $("#email").value.trim();
+      const phone = $("#phone").value.trim();
+      const file  = $("#resume").files[0];
+
+      if(!name||!email||!phone||!file){ alert("Fill all fields + choose PDF"); return; }
+      if(file.type !== "application/pdf"){ alert("PDF only"); return; }
+
+      const base = await makeFolderName(name, email);
+
+      const metaFile = new File(
+        [JSON.stringify({ name, email, phone, createdAt: new Date().toISOString() })],
+        "metadata.json",
+        { type: "application/json" }
+      );
+
+      let r = await upload(`${base}/metadata.json`, metaFile, "application/json");
+      if (r.error) { alert(r.error.message || "metadata upload failed"); return; }
+
+      r = await upload(`${base}/resume.pdf`, file, "application/pdf");
+      if (r.error) { alert(r.error.message || "pdf upload failed"); return; }
+
+      $("#out").textContent = `Submitted: ${base}`;
+      e.target.reset();
+      await loadList();
+    }
+
+    // List root; treat entries without size as "folders"
+    async function listRoot(){
+      const { data, error } = await supabase.storage.from(BUCKET).list("", { limit: 1000 });
+      if (error) { console.error("LIST ERR:", error.message || error); return []; }
+      return (data || []).filter(x => !x?.metadata?.size);
+    }
+
+    async function loadList(){
+      const wrap = $("#list");
+      wrap.textContent = "Loading...";
+
+      const dirs = await listRoot();
+      const rows = [];
+      for (const d of dirs){
+        const base = d.name; // folder
+        const metaURL = publicUrl(`${base}/metadata.json`);
+        const pdfURL  = publicUrl(`${base}/resume.pdf`);
+        let meta = {};
+        try { const res = await fetch(metaURL); if (res.ok) meta = await res.json(); } catch {}
+        rows.push({ id: base, resume: pdfURL, ...meta });
+      }
+
+      rows.sort((a,b)=> (b.createdAt||"").localeCompare(a.createdAt||""));
+      wrap.innerHTML = rows.length ? "" : "No submissions yet.";
+      for (const r of rows){
+        const div = document.createElement("div");
+        div.className = "row";
+        div.innerHTML = `
+          <div style="flex:1">
+            <b>${r.name||"(no name)"} </b> — ${r.email||""} — ${r.phone||""}
+            <div style="font-size:.9em;color:#555">${r.createdAt||""}</div>
+          </div>
+          <div>${r.resume ? `<a href="${r.resume}" target="_blank" rel="noopener">Download PDF</a>` : "(missing pdf)"}</div>`;
+        wrap.appendChild(div);
+      }
+    }
+
+    window.addEventListener("DOMContentLoaded", ()=>{
+      $("#f").addEventListener("submit", submitForm);
+      loadList();
+    });
+  </script>
+</head>
+<body>
+  <h1>Apply</h1>
+  <form id="f">
+    <div class="row"><input id="name"  placeholder="Name"  required style="flex:1"></div>
+    <div class="row"><input id="email" placeholder="Email" required type="email" style="flex:1"></div>
+    <div class="row"><input id="phone" placeholder="Phone" required style="flex:1"></div>
+    <div class="row"><input id="resume" type="file" accept="application/pdf" required></div>
+    <div class="row"><button type="submit">Submit</button></div>
+  </form>
+
+  <p id="out" style="margin:.5rem 0;color:green"></p>
+
+  <h2>Submissions (public)</h2>
+  <div id="list"></div>
+</body>
+</html>
