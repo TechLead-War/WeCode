@@ -68,7 +68,7 @@ export const data = [
   {
     category: "April - June' 2026",
     title: "Hack the Spring (Season 2).",
-    src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3",
+    src: "/HTS2.png",
     info: [
       "48-hour product sprint. Build a meaningful prototype in Web, Systems, FinTech, or Open Innovation. We value usable demos over slideware.",
       "Deliverables: working repo, README with setup, 2-min video, and a short problem statement. Mentors will run code and evaluate reliability, UX, and scope control."
@@ -81,8 +81,7 @@ export const data = [
     results: ["Final demo day with judges", "Results live on website, certificates auto-mailed"],
     capacity: "75 teams (3–5 members)",
     photos: [
-      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1800&auto=format&fit=crop"
+      "/HTS2.png"
     ],
     links: { register: "/events/hts2/register", photos: "/events/hts2/gallery", rules: "/events/hts2/rulebook" },
     contact: "wecode@gehubhimtal.in",
