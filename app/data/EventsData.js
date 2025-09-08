@@ -77,7 +77,7 @@ export const data = [
     time: "48-hour hackathon",
     venue: "Main Auditorium + Labs",
     registrationFee: "₹299 per participant",
-    prizes: ["1st ₹30,000", "2nd ₹20,000", "3rd ₹10,000", "Best Rookie ₹5,000", "Swag + partner goodies"],
+    prizes: ["1st 6x Apple iPads", "2nd ₹90,000", "3rd ₹65,000", "Cash Pool: 6,00,000.", "Swag + partner goodies", "National-level exposure"],
     results: ["Final demo day with judges", "Results live on website, certificates auto-mailed"],
     capacity: "75 teams (3–5 members)",
     photos: [
