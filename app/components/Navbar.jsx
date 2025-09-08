@@ -74,7 +74,7 @@ export default function Navbar() {
                 Resource Material
               </a>
               <a
-                  href="#openposition"
+                  href="/careers"
                   className="block text-base font-medium hover:underline"
                   onClick={() => setOpen(false)}
               >

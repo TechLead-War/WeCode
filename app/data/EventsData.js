@@ -2,7 +2,7 @@ export const data = [
   {
     category: "Coming soon...",
     title: "WeCode Logo Design Competition.",
-    src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3",
+    src: "/logo-competition.png",
     info: [
       "Design a fresh visual identity for WeCode that works on web, print, merchandise, and dark/light themes. Submissions must be original and vector-first.",
       "Upload a primary logo, monochrome variant, favicon (square), and a mini brand sheet with color codes and typography suggestions. Briefly describe the concept and usage dos/don’ts."
@@ -15,39 +15,16 @@ export const data = [
     results: ["Winners announced on Instagram & website", "Winning assets implemented on club properties"],
     capacity: "Unlimited",
     photos: [
-      "https://images.unsplash.com/photo-1526498460520-4c246339dccb?q=80&w=1800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1529336953121-ad3c0f52a8c6?q=80&w=1800&auto=format&fit=crop"
+        "/logo-competition.png",
     ],
     links: { register: "/events/logo/register", photos: "", rules: "/events/logo/rules" },
     contact: "wecode@gehubhimtal.in",
     tags: ["design", "branding", "creative"]
   },
   {
-    category: "October 2025",
-    title: "Open Book Challenge (Only for 2nd Year).",
-    src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3",
-    info: [
-      "Solve curated DSA and debugging problems with any resources open: notes, docs, internet. The focus is on reasoning, approach clarity, and correctness under time constraints.",
-      "You’ll submit final code + a short rationale per problem. Plagiarism checks are strict: identical code without attribution or AI-only answers will be disqualified."
-    ],
-    date: "October 2025",
-    time: "10:00 AM – 1:00 PM IST",
-    venue: "Lab Block, Room L-204",
-    registrationFee: "₹99",
-    prizes: ["1st ₹5,000", "2nd ₹3,000", "3rd ₹2,000"],
-    results: ["Leaderboard published same day 5:00 PM", "Certificates via e-mail within 48 hours"],
-    capacity: "120",
-    photos: [
-      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1800&auto=format&fit=crop"
-    ],
-    links: { register: "/events/open-book/register", photos: "/events/open-book/gallery", rules: "/events/open-book/rules" },
-    contact: "wecode@gehubhimtal.in",
-    tags: ["coding", "open-book", "problem-solving"]
-  },
-  {
     category: "Coming soon...",
     title: "Portfolio Building Workshop.",
-    src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3",
+    src: "/portfolio.png",
     info: [
       "Hands-on session to build a recruiter-friendly portfolio: laser-focused resume bullets, projects with measurable impact, and a clean GitHub profile.",
       "We’ll structure a minimal personal site (About, Projects, Writing) and add a live demo for at least one project. Bring your laptop and 2 project ideas."
@@ -60,11 +37,33 @@ export const data = [
     results: ["Feedback sheet shared to all participants", "Template starter shared after session"],
     capacity: "80",
     photos: [
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1800&auto=format&fit=crop"
+      "/portfolio.png"
     ],
     links: { register: "/events/portfolio/register", photos: "/events/portfolio/gallery", rules: "" },
     contact: "wecode@gehubhimtal.in",
     tags: ["career", "portfolio", "resume", "github"]
+  },
+    {
+    category: "October 2025",
+    title: "Open Book Challenge (Only for 2nd Year).",
+    src: "/open-book.png",
+    info: [
+      "Solve curated DSA and debugging problems with any resources open: notes, docs, internet. The focus is on reasoning, approach clarity, and correctness under time constraints.",
+      "You’ll submit final code + a short rationale per problem. Plagiarism checks are strict: identical code without attribution or AI-only answers will be disqualified."
+    ],
+    date: "October 2025",
+    time: "10:00 AM – 1:00 PM IST",
+    venue: "Lab Block, Room L-204",
+    registrationFee: "₹99",
+    prizes: ["1st ₹5,000", "2nd ₹3,000", "3rd ₹2,000"],
+    results: ["Leaderboard published same day 5:00 PM", "Certificates via e-mail within 48 hours"],
+    capacity: "120",
+    photos: [
+      "/open-book.png"
+    ],
+    links: { register: "/events/open-book/register", photos: "/events/open-book/gallery", rules: "/events/open-book/rules" },
+    contact: "wecode@gehubhimtal.in",
+    tags: ["coding", "open-book", "problem-solving"]
   },
   {
     category: "April - June' 2026",

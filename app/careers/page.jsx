@@ -20,7 +20,6 @@ export default function Careers() {
         </p>
 
         <div className="mt-8 grid grid-cols-1 md:grid-cols-[320px_1fr] gap-6">
-          {/* Sidebar */}
           <aside
             className={[
               "bg-neutral-900 rounded-xl p-2 md:p-3 md:sticky md:top-6 max-h-[70vh] overflow-auto",
