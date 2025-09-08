@@ -316,7 +316,7 @@ about: [
     id: "pmts",
     title: "Principal Member Of Technical Staff (PMTS)",
     locations: ["Onsite", "Bhimtal Campus"],
-    level: "Extraordinary",
+    level: "Principal roles (Requires 2+ years at WeCode, and domain expertise).",
     eligibility: ["2+ years of WeCode service", "Expert-level impact in a domain."],
     minQual: ["Proven multi-team initiatives", "Track record of mentorship and standards-setting."],
     prefQual: ["External talks/papers, cross-org influence, strong internships or high package placement."],
