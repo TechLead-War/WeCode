@@ -21,7 +21,7 @@ export default function Navbar() {
             </div>
 
             <div className="hidden md:flex items-center space-x-6">
-              <Link href="#events" className="hover:underline text-sm font-medium">
+              <Link href="/#events" className="hover:underline text-sm font-medium">
                 Events
               </Link>
 
