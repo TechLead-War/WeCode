@@ -86,7 +86,6 @@ export const Carousel = ({
           <div
             className={cn(
               "flex flex-row justify-start gap-4 pl-4",
-              // remove max-w-4xl if you want the carousel to span the full width of its container
               "mx-auto max-w-7xl"
             )}>
             {items.map((item, index) => (
