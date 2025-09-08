@@ -135,7 +135,7 @@ export const data = [
   {
     category: "November 2025",
     title: "Reverse Engineering - C Binaries",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3",
+    src: "/reverse-engineering.png",
     info: [
       "Analyze ELF binaries, identify protections (stripped symbols, packing, obfuscation), and reconstruct core logic. Expect puzzles on I/O behavior and edge conditions.",
       "Bring a Linux-ready laptop. Recommended tools: objdump, strings, ltrace/strace, gdb, radare2 or Ghidra. Basic C and OS concepts required."
@@ -148,7 +148,7 @@ export const data = [
     results: ["Top write-ups published on WeCode blog", "Solution outlines released after the event"],
     capacity: "60",
     photos: [
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1800&auto=format&fit=crop"
+      "/reverse-engineering.png"
     ],
     links: { register: "/events/re-c/register", photos: "/events/re-c/gallery", rules: "/events/re-c/rules" },
     contact: "wecode@gehubhimtal.in",
