@@ -54,10 +54,10 @@ export const data = [
     date: "October 2025",
     time: "10:00 AM – 1:00 PM IST",
     venue: "Lab Block, Room L-204",
-    registrationFee: "₹99",
-    prizes: ["1st ₹5,000", "2nd ₹3,000", "3rd ₹2,000"],
+    registrationFee: "Free",
+    prizes: ["GP Marks", "Reorganisation from teachers", "Considerations on Industrial Visit."],
     results: ["Leaderboard published same day 5:00 PM", "Certificates via e-mail within 48 hours"],
-    capacity: "120",
+    capacity: "60",
     photos: [
       "/open-book.png"
     ],
@@ -113,7 +113,7 @@ export const data = [
   {
     category: "November 2025",
     title: "Code Relay",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3",
+    src: "/code-relay.png",
     info: [
       "Team event with staged problems. Member A implements Stage-1, hands over to B for Stage-2, and so on. Communication and hand-off quality are part of scoring.",
       "Stages may include API skeletons, failing tests, performance ceilings, or refactors. Strategy matters: assign strengths to stages."
@@ -126,7 +126,7 @@ export const data = [
     results: ["Round-wise cumulative scores displayed live", "Post-mortem and best solutions published"],
     capacity: "40 teams (2–3 members)",
     photos: [
-      "https://images.unsplash.com/photo-1529101091764-c3526daf38fe?q=80&w=1800&auto=format&fit=crop"
+      "/code-relay.png"
     ],
     links: { register: "/events/code-relay/register", photos: "/events/code-relay/gallery", rules: "/events/code-relay/rules" },
     contact: "wecode@gehubhimtal.in",
