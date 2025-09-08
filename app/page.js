@@ -4,7 +4,7 @@ import { Cards } from "@/app/components/Cards";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Navbar />
       <Vortex
         containerClassName="-z-10 pointer-events-none"
