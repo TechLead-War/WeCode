@@ -17,7 +17,7 @@ export default function Home() {
             Welcome to <span className="text-purple-400">WeCode</span>
           </h1>
 
-          <p className="text-gray-300 max-w-xl mx-auto">
+          <p className="text-gray-50 max-w-xl mx-auto">
             &#34;Where creativity meets code — empowering students to innovate,
             collaborate, and shape the future.&#34;
           </p>

@@ -99,7 +99,7 @@ export default function Careers() {
 
             <div className="mt-6 grid gap-6">
               <div className="rounded-xl bg-neutral-800 p-5">
-                <h3 className="text-lg font-semibold">Minimum qualifications</h3>
+                <h3 className="text-lg font-semibold">Minimum Qualifications</h3>
                 <ul className="mt-3 list-disc list-inside text-gray-300 space-y-1">
                   {(sel.minQual ?? []).map((q, i) => <li key={i}>{q}</li>)}
                 </ul>
@@ -113,14 +113,14 @@ export default function Careers() {
               </div>
 
               <div className="rounded-xl bg-neutral-800 p-5">
-                <h3 className="text-lg font-semibold">Preferred qualifications</h3>
+                <h3 className="text-lg font-semibold">Preferred Qualifications</h3>
                 <ul className="mt-3 list-disc list-inside text-gray-300 space-y-1">
                   {(sel.prefQual ?? []).map((q, i) => <li key={i}>{q}</li>)}
                 </ul>
               </div>
 
               <div className="rounded-xl bg-neutral-800 p-5">
-                <h3 className="text-lg font-semibold">About the job</h3>
+                <h3 className="text-lg font-semibold">About the Job</h3>
                 <div className="mt-3 space-y-2 text-gray-300">
                   {(sel.about ?? []).map((p, i) => <p key={i}>{p}</p>)}
                 </div>

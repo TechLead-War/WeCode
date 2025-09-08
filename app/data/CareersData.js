@@ -313,7 +313,7 @@ export const ROLES = [
     id: "pmts",
     title: "Principal Member Of Technical Staff (PMTS)",
     locations: ["Onsite", "Bhimtal Campus"],
-    level: "Principal (Requires 2+ years at WeCode & domain expertise)",
+    level: " (Requires 2+ years at WeCode & domain expertise)",
     eligibility: [
       "Minimum 2 years of active WeCode service.",
       "Demonstrated expert-level impact in a domain (Web, AI/ML, CP, DSA, IoT/Cyber)."
