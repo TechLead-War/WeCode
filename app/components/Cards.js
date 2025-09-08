@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Carousel, Card } from "@/app/components/ui/CardCarousel";
-import { data } from "@/app/data/EventsData"; // adjust path depending on where you put data.js
+import { data } from "@/app/data/EventsData";
 
 const DummyContent = () => (
   <>
@@ -34,7 +34,7 @@ export function Cards() {
   const cards = data.map((card, index) => (
     <Card
       key={card.src ?? index}
-      card={{ ...card, content: <DummyContent /> }}
+      card={card}}
       index={index}
     />
   ));
