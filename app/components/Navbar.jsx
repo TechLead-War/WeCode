@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-
+import Link from "next/link";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
@@ -17,15 +17,15 @@ export default function Navbar() {
                   <img src="/logo.png" alt="WeCode Logo"/>
                 </div>
               </div>
-              <span className="text-xl font-bold tracking-tight"><a href={"#"}> WeCode </a></span>
+              <span className="text-xl font-bold tracking-tight"><a href={"/"}> WeCode </a></span>
             </div>
 
             <div className="hidden md:flex items-center space-x-6">
-              <a href="#events" className="hover:underline text-sm font-medium">
+              <Link href="#events" className="hover:underline text-sm font-medium">
                 Events
-              </a>
+              </Link>
 
-              <a href="#openposition" className="hover:underline text-sm font-medium">
+              <a href="/careers" className="hover:underline text-sm font-medium">
                 Open Positions
               </a>
               <a href="https://shorturl.at/JuvV8" className="hover:underline text-sm font-medium">
