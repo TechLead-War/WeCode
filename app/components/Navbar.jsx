@@ -66,13 +66,7 @@ export default function Navbar() {
               >
                 Events
               </a>
-              <a
-                  href="#resources"
-                  className="block text-base font-medium hover:underline"
-                  onClick={() => setOpen(false)}
-              >
-                Resource Material
-              </a>
+             
               <a
                   href="/careers"
                   className="block text-base font-medium hover:underline"
@@ -81,7 +75,7 @@ export default function Navbar() {
                 Open Positions
               </a>
 
-              <a href="https://shorturl.at/JuvV8" className="hover:underline text-sm font-medium">
+              <a href="https://shorturl.at/JuvV8" className="block text-base font-medium hover:underline">
                 Ecertificates
               </a>
               <a
