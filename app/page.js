@@ -7,8 +7,8 @@ export default function Home() {
     <div className="overflow-x-hidden">
       <Navbar />
       <Vortex
-        containerClassName="-z-10 pointer-events-none"
-        className="relative z-10 flex w-full flex-col items-center text-center pt-20 h-screen pb-12 pointer-events-auto"
+        containerClassName=""
+        className="relative z-0 flex w-full flex-col items-center text-center pt-20 h-screen pb-12 pointer-events-auto"
         backgroundColor="#000"
         baseHue={210}
       >
@@ -25,14 +25,16 @@ export default function Home() {
             <div className="flex flex-wrap justify-center gap-4">
                 <a
                     href="https://discord.gg/dk25zDfk"
-                    className="px-6 py-3 bg-purple-500 text-white font-semibold rounded-full shadow hover:bg-purple-400 transition"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative z-50 px-6 py-3 bg-purple-500 text-white font-semibold rounded-full shadow hover:bg-purple-400 transition cursor-pointer pointer-events-auto"
                 >
                     Join Discord
                 </a>
                 <a
-                    href="#contact"
+                    href="#events"
 
-                    className="px-6 py-3 bg-white text-[#1e3a8a] font-semibold rounded-full shadow hover:brightness-105 transition"
+                    className="relative z-50 px-6 py-3 bg-white text-[#1e3a8a] font-semibold rounded-full shadow hover:brightness-105 transition cursor-pointer pointer-events-auto"
                 >
                     Learn More
                 </a>

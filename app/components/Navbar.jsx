@@ -7,7 +7,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-      <nav className="w-full bg-black text-white shadow-lg fixed top-0 left-0 z-50">
+      <nav className="w-full bg-black text-white shadow-lg fixed top-0 left-0 z-[9999] pointer-events-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-3">
