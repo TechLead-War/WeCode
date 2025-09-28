@@ -1,10 +1,10 @@
 export const data = [
   {
     category: "Coming soon...",
-    title: "WeCode Logo Design Competition.",
+    title: "wecode Logo Design Competition.",
     src: "/logo-competition.png",
     info: [
-      "Design a fresh visual identity for WeCode that works on web, print, merchandise, and dark/light themes. Submissions must be original and vector-first.",
+      "Design a fresh visual identity for wecode that works on web, print, merchandise, and dark/light themes. Submissions must be original and vector-first.",
       "Upload a primary logo, monochrome variant, favicon (square), and a mini brand sheet with color codes and typography suggestions. Briefly describe the concept and usage dos/don’ts."
     ],
     date: "TBD, 2025",
@@ -144,7 +144,7 @@ export const data = [
     venue: "Systems Lab, Room S-103",
     registrationFee: "₹149",
     prizes: ["1st ₹5,000", "2nd ₹3,000", "Best Write-up ₹2,000"],
-    results: ["Top write-ups published on WeCode blog", "Solution outlines released after the event"],
+    results: ["Top write-ups published on wecode blog", "Solution outlines released after the event"],
     capacity: "60",
     photos: [
       "/reverse-engineering.png"

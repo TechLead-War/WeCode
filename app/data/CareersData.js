@@ -266,7 +266,7 @@ export const ROLES = [
     minQual: ["Copywriting basics, platform familiarity."],
     prefQual: ["Content calendar, analytics, basic design."],
 about: [
-      "Plan and run content calendars for WeCode events, workshops, and product launches.",
+      "Plan and run content calendars for wecode events, workshops, and product launches.",
       "Write crisp copy optimized for engagement across platforms (Twitter, LinkedIn, Instagram).",
       "Coordinate with designers for asset creation and ensure branding consistency.",
       "Analyze performance metrics to optimize future content strategies."
@@ -316,15 +316,15 @@ about: [
     id: "pmts",
     title: "Principal Member Of Technical Staff (PMTS)",
     locations: ["Onsite", "Bhimtal Campus"],
-    level: "Principal roles (Requires 2+ years at WeCode, and domain expertise).",
-    eligibility: ["2+ years of WeCode service", "Expert-level impact in a domain."],
+    level: "Principal roles (Requires 2+ years at wecode, and domain expertise).",
+    eligibility: ["2+ years of wecode service", "Expert-level impact in a domain."],
     minQual: ["Proven multi-team initiatives", "Track record of mentorship and standards-setting."],
     prefQual: ["External talks/papers, cross-org influence, strong internships or high package placement."],
     about: [
-      "Own the technical direction and high-quality standards across WeCode’s engineering and product teams.",
+      "Own the technical direction and high-quality standards across wecode’s engineering and product teams.",
       "Lead large-scale cross-domain technical initiatives driving performance, reliability, and impact.",
       "Mentor leads and contributors, fostering a high-excellence engineering culture.",
-      "Represent WeCode at conferences, workshops, and external collaborations.",
+      "Represent wecode at conferences, workshops, and external collaborations.",
       "Develop strategic visions and ensure knowledge transfer."
     ],
     benefits: ["Strategic influence, legacy projects, recognition"],

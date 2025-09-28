@@ -25,6 +25,11 @@ export default function Navbar() {
                 Events
               </Link>
 
+                <Link href="/wecode" className="hover:underline text-sm font-medium">
+                  WeCode Timeline
+                </Link>
+
+
               <a href="/careers" className="hover:underline text-sm font-medium">
                 Open Positions
               </a>
@@ -66,7 +71,14 @@ export default function Navbar() {
               >
                 Events
               </a>
-             
+                 <a
+                  href="/wecode"
+                  className="block text-base font-medium hover:underline"
+                  onClick={() => setOpen(false)}
+                >
+                  WeCode Timeline
+                </a>
+
               <a
                   href="/careers"
                   className="block text-base font-medium hover:underline"

@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "WeCode GEHU",
+  title: "wecode GEHU",
   description: "Coding Club Site of GEHU, Bhimtal Campus.",
 };
 
