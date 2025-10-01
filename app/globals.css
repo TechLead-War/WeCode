@@ -29,3 +29,32 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* Timeline animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes growLine {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.animate-growLine {
+  animation: growLine 3.5s ease-out forwards;
+}
