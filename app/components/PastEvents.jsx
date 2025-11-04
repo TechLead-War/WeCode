@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { WeCodeEvents } from "@/app/data/TimelineData";
 
-export default function WeCodeTimeline() {
+export default function PastEvents() {
   const [visibleEvents, setVisibleEvents] = useState([]);
   const [loading, setLoading] = useState(false);
   const timelineRef = useRef(null);
@@ -74,7 +74,7 @@ export default function WeCodeTimeline() {
   return (
     <div className="max-w-7xl mx-auto py-10 sm:py-20 px-4">
       <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-center mb-8 sm:mb-12">
-        WeCode Club Timeline
+        Past Events
       </h2>
       
       {/* Centered timeline with alternating cards */}

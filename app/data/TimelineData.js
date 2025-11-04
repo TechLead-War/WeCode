@@ -1,25 +1,60 @@
 export const WeCodeEvents = [
+
   {
-    title: "wecode Orientation Day",
-    date: "August 2024",
+    title: "Hackathon – Hack the Spring",
+    date: "April 2024",
     description:
-      "Our first orientation introduced new members to the wecode Club’s mission. We covered club goals, coding resources, and built community through ice reekers.",
-    location: "CSE Seminar Hall",
+      "An intense 24-hour coding marathon where brilliant minds collaborated to build innovative tech solutions addressing real-world challenges and pushing the boundaries of what's possible",
     photos: [
-      "/wecode/orientation/orientation1.jpg",
-      "/wecode/orientation/orientation2.jpg",
+      "/wecode/hackathon/e1.jpg",
     ],
   },
   {
-    title: "Bug Hunt Challenge",
-    date: "December 2024",
+    title: "Codethon – Hack the Spring",
+    date: "April 2024",
     description:
-      "In this hands‑on debugging workshop, teams raced to find and fix bugs in a legacy codebase. The session emphasised systematic testing and collaboration.",
-    location: "Lab Block, L‑202",
+      "A coding sprint where students tackled problem-solving challenges under time pressure.",
+    location: "Computer Lab, Block B",
     photos: [
-      "/wecode/bug-hunt/bug1.jpg",
-      "/wecode/bug-hunt/bug2.jpg",
-      "/wecode/bug-hunt/bug3.jpg",
+      "/wecode/codethon/c1.jpg",
+      "/wecode/codethon/c2.jpg",
     ],
   },
+  {
+    title: "Open Book Challenge",
+    date: "August 2025",
+    description:
+      "A unique coding challenge where participants can use any resources they want - the focus is on logical thinking, research skills, and practical problem-solving rather than memorization",
+    location: "Computer Lab, Block C",
+    photos: [
+      "/wecode/openbook/o1.jpg",
+      "/wecode/openbook/o2.jpg",
+      "/wecode/openbook/o3.jpg",
+      "/wecode/openbook/o4.jpg",
+
+    ],
+  },
+  {
+    title: "SIH Internal Hackathon - 2025",
+    date: "August 2025",
+    description:
+       "Compete in teams to solve real-world problem statements as part of the institute's internal round for Smart India Hackathon. Top teams qualify for the national round.",
+    location: "Main Campus",
+    photos: [
+      "/wecode/sih/s1.jpg",
+    ],
+  },
+  {
+    title: "Induction Program - 2025",
+    date: "August 2025",
+    description:
+      "A comprehensive welcome program designed to introduce new members to WeCode's culture, values, and community through interactive sessions and team-building activities",
+    location: "Main Auditorium",
+    photos: [
+      "/wecode/induction/i2.jpg",
+      "/wecode/induction/i1.jpg",
+      "/wecode/induction/i3.jpg",
+    ],
+  },
+
 ];
