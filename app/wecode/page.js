@@ -1,5 +1,5 @@
 import Navbar from "@/app/components/Navbar";
-import WeCodeTimeline from "@/app/components/WeCodeTimeline";
+import WeCodeTimeline from "@/app/components/PastEvents";
 
 export const metadata = {
   title: "wecode Club Timeline | wecode",

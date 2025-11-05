@@ -26,7 +26,7 @@ export default function Navbar() {
               </Link>
 
                 <Link href="/wecode" className="hover:underline text-sm font-medium">
-                  WeCode Timeline
+                  Past Events
                 </Link>
 
 
